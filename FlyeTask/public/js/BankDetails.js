@@ -224,7 +224,7 @@ $(document).ready(function () {
             var html_data = "";
             if (data.length != 0) {
                 html_data = "";
-                html_data = html_data + '<table class="table table-responsive">' +
+                html_data = html_data + '<table class="table">' +
                     '<thead>' +
                     '<tr>' +
                     '<th>Bank Ifsc</th>' +
