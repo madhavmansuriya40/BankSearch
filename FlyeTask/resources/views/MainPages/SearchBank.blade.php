@@ -138,7 +138,7 @@
                         <span style="font-size: 2em">Favourites <em class="fa fa-star-o"
                                                                     style="color: yellow;"></em></span>
                     </div>
-                    <div id="div_fav_banks" style="margin-top: 5%"></div>
+                    <div id="div_fav_banks" class="table-responsive" style="margin-top: 5%"></div>
                     <div id="div_fav_banks_loader" class="col-sm-12 text-center" style="margin-top: 5%">
                         <img src="/image/fav_loader.gif" width="800">
                     </div>
