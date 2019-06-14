@@ -52,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/MainPages/SearchBank.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="125">
-              <caret line="140" column="91" selection-start-line="140" selection-start-column="91" selection-end-line="140" selection-end-column="91" />
+              <caret line="140" column="75" selection-start-line="140" selection-start-column="75" selection-end-line="140" selection-end-column="75" />
               <folding>
                 <element signature="e#6821#6860#0#HTML" expanded="true" />
                 <element signature="e#6886#6908#0#HTML" expanded="true" />
@@ -403,12 +403,12 @@
       <updated>1560427286963</updated>
       <workItem from="1560427289385" duration="25172000" />
       <workItem from="1560481279197" duration="23605000" />
-      <workItem from="1560528924462" duration="1865000" />
+      <workItem from="1560528924462" duration="1906000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50642000" />
+    <option name="totallyTimeSpent" value="50683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
@@ -764,7 +764,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/MainPages/SearchBank.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
-          <caret line="140" column="91" selection-start-line="140" selection-start-column="91" selection-end-line="140" selection-end-column="91" />
+          <caret line="140" column="75" selection-start-line="140" selection-start-column="75" selection-end-line="140" selection-end-column="75" />
           <folding>
             <element signature="e#6821#6860#0#HTML" expanded="true" />
             <element signature="e#6886#6908#0#HTML" expanded="true" />
