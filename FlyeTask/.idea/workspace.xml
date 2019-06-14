@@ -52,8 +52,9 @@
         <entry file="file://$PROJECT_DIR$/resources/views/MainPages/SearchBank.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="125">
-              <caret line="140" column="67" selection-start-line="140" selection-start-column="67" selection-end-line="140" selection-end-column="67" />
+              <caret line="140" column="91" selection-start-line="140" selection-start-column="91" selection-end-line="140" selection-end-column="91" />
               <folding>
+                <element signature="e#6821#6860#0#HTML" expanded="true" />
                 <element signature="e#6886#6908#0#HTML" expanded="true" />
               </folding>
             </state>
@@ -402,12 +403,12 @@
       <updated>1560427286963</updated>
       <workItem from="1560427289385" duration="25172000" />
       <workItem from="1560481279197" duration="23605000" />
-      <workItem from="1560528924462" duration="1805000" />
+      <workItem from="1560528924462" duration="1865000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50582000" />
+    <option name="totallyTimeSpent" value="50642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
@@ -501,6 +502,7 @@
         <state relative-caret-position="3360">
           <caret line="140" column="65" selection-start-line="140" selection-start-column="65" selection-end-line="140" selection-end-column="65" />
           <folding>
+            <element signature="e#6821#6860#0#HTML" expanded="true" />
             <element signature="e#6886#6908#0#HTML" expanded="true" />
           </folding>
         </state>
@@ -572,6 +574,7 @@
         <state relative-caret-position="1440">
           <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
           <folding>
+            <element signature="e#6821#6860#0#HTML" expanded="true" />
             <element signature="e#6886#6908#0#HTML" expanded="true" />
           </folding>
         </state>
@@ -761,8 +764,9 @@
     <entry file="file://$PROJECT_DIR$/resources/views/MainPages/SearchBank.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
-          <caret line="140" column="67" selection-start-line="140" selection-start-column="67" selection-end-line="140" selection-end-column="67" />
+          <caret line="140" column="91" selection-start-line="140" selection-start-column="91" selection-end-line="140" selection-end-column="91" />
           <folding>
+            <element signature="e#6821#6860#0#HTML" expanded="true" />
             <element signature="e#6886#6908#0#HTML" expanded="true" />
           </folding>
         </state>
