@@ -8,14 +8,7 @@
 
     <link rel="shortcut icon" href="/image/bank.png" type="image/x-icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="icon" type="image/x-icon" href="https://www.herokucdn.com/favicons/favicon.ico" />
-    <link rel="mask-icon" href="https://www.herokucdn.com/favicons/icon.svg" color="#79589f">
-    <link rel="apple-touch-icon" type="image/png" href="/image/bank.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="/image/bank.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="/image/bank.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/image/bank.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/image/bank.png">
+    
 
 
     <title>@yield('title')</title>
