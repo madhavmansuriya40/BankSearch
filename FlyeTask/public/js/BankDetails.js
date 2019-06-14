@@ -11,6 +11,7 @@ $(document).ready(function () {
     $("#div_search_dd").hide();
     $("#div_show_bank_list").hide();
     $("#t_body_loader").hide();
+    $("#div_fav_banks").hide();
 
     var platform = new H.service.Platform({
         "app_id": "BjmHZnahwYeQWLjbemD7",
@@ -215,6 +216,7 @@ $(document).ready(function () {
     $("#btn_add_fav").click(function () {
 
         $("#div_fav_banks").html('');
+        $("#div_fav_banks_loader").fadeIn(200);
 
         $.post('/get_fav_banks', {
             '_token': $('input[name=_token]').val()
@@ -247,6 +249,8 @@ $(document).ready(function () {
             }
 
             $("#div_fav_banks").html(html_data);
+            $("#div_fav_banks").fadeIn(500);
+            $("#div_fav_banks_loader").fadeOut(200);
         });
     });
 

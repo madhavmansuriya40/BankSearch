@@ -139,6 +139,9 @@
                                                                     style="color: yellow;"></em></span>
                     </div>
                     <div id="div_fav_banks" style="margin-top: 5%"></div>
+                    <div id="div_fav_banks_loader" class="col-sm-12 text-center" style="margin-top: 5%">
+                        <img src="/image/fav_loader.gif" width="800">
+                    </div>
                     <div class="col-sm-12 text-right" style="margin: 2%;position: relative">
                         <button style="background: transparent;border-radius: 50px;border: 2px solid yellow;color: yellow;letter-spacing: 2px"
                                 type="button" class="btn btn-default" data-dismiss="modal">Close
