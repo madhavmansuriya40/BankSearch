@@ -249,8 +249,9 @@ $(document).ready(function () {
             }
 
             $("#div_fav_banks").html(html_data);
-            $("#div_fav_banks").fadeIn(500);
             $("#div_fav_banks_loader").fadeOut(200);
+            $("#div_fav_banks").fadeIn(500);
+
         });
     });
 
