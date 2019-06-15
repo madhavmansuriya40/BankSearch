@@ -57,6 +57,7 @@ class Bank extends Controller
     {
         $b_id = $request->bank_id;
         return view('MainPages.BankPage',compact('b_id'));
+
     }
 
 }

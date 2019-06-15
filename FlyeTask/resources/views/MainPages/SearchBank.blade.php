@@ -4,7 +4,6 @@
 
 
 
-
     <div class="col-sm-12 top-bar" style="top: 0px;padding: 2%;position: fixed;z-index: 9999">
         <div class="text-center">
             <h2 style="color: white;"><em class="fa fa-university"></em> Banks, on your door step</h2>
@@ -23,7 +22,6 @@
                 <div style="cursor:pointer;" id="btn_back" class="btn"><em class="fa fa-arrow-left"></em> Back</div>
             </div>
             <div class="text-right col-sm-6">
-                <em class="fa fa-search col-white" style="font-size: 1.2em"></em>
                 <select class="search_box text-center" id="dd_city">
                     <option value="" selected disabled>Select City</option>
                     <option value="SURAT">SURAT</option>
@@ -97,7 +95,7 @@
                     }
                 </script>
                 <div id="printableArea">
-                    <table id="bank_table" class="table-hover table-striped table">
+                    <table id="bank_table" class="bank_table table-hover table-striped table">
                         <thead>
                         <tr>
                             <th>Bank Name</th>
@@ -110,7 +108,6 @@
                         </tbody>
                     </table>
                 </div>
-
 
                 <div id="t_body_loader">
                     <div style="height: 50px;width: 100%;background: url('/image/row_loader.gif');background-size: cover;background-repeat: no-repeat;">
@@ -126,7 +123,7 @@
             </div>
         </div>
 
-
+        {{--<script type="text/javascript" src="/js/pagination.js"></script>--}}
     </div>
 
     <div class="modal fade " id="fav_banks" role="dialog" style="z-index: 99999">
@@ -156,8 +153,8 @@
     </div>
 
 
-
-
     <script src="https://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+
+
 @endsection()

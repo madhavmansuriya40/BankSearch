@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
-
     var html_data;
     var loader_data = "";
     var bank_list = "";
+    var local = "";
 
     var base_city = "";
     $("#div_search").hide();
@@ -12,6 +12,7 @@ $(document).ready(function () {
     $("#div_show_bank_list").hide();
     $("#t_body_loader").hide();
     $("#div_fav_banks").hide();
+
 
     var platform = new H.service.Platform({
         "app_id": "BjmHZnahwYeQWLjbemD7",
@@ -30,6 +31,7 @@ $(document).ready(function () {
                     var city = data.Response.View[0].Result[0].Location.Address.City;
                     $("#lbl_city_name").html(city);
                     base_city = city.toUpperCase();
+                    local = base_city;
                     $(".city_name").attr('id', city);
                     // alert("Would you like to view banks of :\n" + data.Response.View[0].Result[0].Location.Address.City);
                 }, error => {
@@ -122,76 +124,107 @@ $(document).ready(function () {
 
         $("#table_data").html('');
         var html_data = "";
-        $.ajax({
-            url: "https://vast-shore-74260.herokuapp.com/banks?city=" + base_city,
-            success: function (result) {
 
-                let last_search = localStorage.getItem('laset_search');
-                if (last_search) {
-                    localStorage.setItem('bank_data = ', JSON.stringify(result));
-                }
-                else {
-                    localStorage.setItem('bank_data = ', JSON.stringify(result));
-                }
+        let last_search = localStorage.getItem(local);
+        console.log()
+        if (last_search) {
+            result = JSON.parse(last_search);
+            for (var i = 0; i < result.length; i++) {
 
-
-                for (var i = 0; i < result.length; i++) {
-
-                    html_data = html_data + '<tr>' +
-                        '<td><a style="text-decoration: none" href=banks/' + result[i].bank_id + '>' + result[i].bank_name + '</a></td>' +
-                        '<td>' + result[i].branch + '</td>' +
-                        '<td>' + result[i].city + '</td>' +
-                        '<td style="cursor: pointer" class="text-center btn add_to_favourite" id=' + result[i].ifsc + '><em class="fa fa-star-o" style="font-size: 1.4em"></em></td>' +
-                        '</tr>';
-                }
-
-                $("#table_data").html(html_data);
-                $("#table_data").fadeIn(500);
-                $("#t_body_loader").fadeOut(500);
-                $("#div_show_bank_list").fadeIn(500);
-                $("#div_search_dd").fadeIn(500);
+                html_data = html_data + '<tr>' +
+                    '<td><a style="text-decoration: none" href=banks/' + result[i].bank_id + '>' + result[i].bank_name + '</a></td>' +
+                    '<td>' + result[i].branch + '</td>' +
+                    '<td>' + result[i].city + '</td>' +
+                    '<td style="cursor: pointer" class="text-center btn add_to_favourite" id=' + result[i].ifsc + '><em class="fa fa-star-o" style="font-size: 1.4em"></em></td>' +
+                    '</tr>';
             }
-        });
+            $("#table_data").html(html_data);
+        }
+        else {
+
+
+            $.ajax({
+                url: "https://vast-shore-74260.herokuapp.com/banks?city=" + base_city,
+                success: function (result) {
+
+                    localStorage.setItem(local, JSON.stringify(result));
+
+
+                    for (var i = 0; i < result.length; i++) {
+
+                        html_data = html_data + '<tr>' +
+                            '<td><a style="text-decoration: none" href=banks/' + result[i].bank_id + '>' + result[i].bank_name + '</a></td>' +
+                            '<td>' + result[i].branch + '</td>' +
+                            '<td>' + result[i].city + '</td>' +
+                            '<td style="cursor: pointer" class="text-center btn add_to_favourite" id=' + result[i].ifsc + '><em class="fa fa-star-o" style="font-size: 1.4em"></em></td>' +
+                            '</tr>';
+                    }
+                    $("#table_data").html(html_data);
+                }
+            });
+        }
+
+        $("#table_data").fadeIn(500);
+        $("#t_body_loader").fadeOut(500);
+        $("#div_show_bank_list").fadeIn(500);
+        $("#div_search_dd").fadeIn(500);
     });
 
     $("#dd_city").change(function () {
         var base_city = $('#dd_city option:selected').text();
 
-        $("#t_body_loader").fadeIn(500);
-        $("#table_data").fadeOut(500);
+        $("#t_body_loader").fadeIn(150);
+        $("#table_data").fadeOut(50);
 
         $("#table_data").html('');
         var html_data = "";
-        $.ajax({
-            url: "https://vast-shore-74260.herokuapp.com/banks?city=" + base_city,
-            success: function (result) {
-                let last_bank_search = localStorage.getItem('bank_search_id');
-                if (last_bank_search == base_city) {
-                    localStorage.setItem('bank_search_id = ', base_city);
-                    localStorage.setItem('bank_search_data = ', JSON.stringify(result));
-                }
-                else {
-                    localStorage.setItem('bank_search_id = ', base_city);
-                    localStorage.setItem('bank_search_data = ', JSON.stringify(result));
-                }
-                for (var i = 0; i < result.length; i++) {
-                    html_data = html_data + '<tr>' +
-                        '<td><a style="text-decoration: none" href=banks/' + result[i].bank_id + '>' + result[i].bank_name + '</td>' +
-                        '<td>' + result[i].branch + '</td>' +
-                        '<td>' + result[i].city + '</td>' +
-                        '<td style="cursor: pointer" class="text-center btn add_to_favourite" id=' + result[i].ifsc + '><em class="fa fa-star-o" style="font-size: 1.4em"></em></td>' +
-                        '</tr>'
-                }
 
-                $("#table_data").html(html_data);
+        let last_bank_search = localStorage.getItem(base_city);
+
+        if (last_bank_search) {
+            result = JSON.parse(last_bank_search);
+            for (var i = 0; i < result.length; i++) {
+                html_data = html_data + '<tr>' +
+                    '<td><a style="text-decoration: none" href=banks/' + result[i].bank_id + '>' + result[i].bank_name + '</td>' +
+                    '<td>' + result[i].branch + '</td>' +
+                    '<td>' + result[i].city + '</td>' +
+                    '<td style="cursor: pointer" class="text-center btn add_to_favourite" id=' + result[i].ifsc + '><em class="fa fa-star-o" style="font-size: 1.4em"></em></td>' +
+                    '</tr>'
             }
-        });
+            $("#table_data").html(html_data);
+        }
+        else {
+
+
+
+            $.ajax({
+                url: "https://vast-shore-74260.herokuapp.com/banks?city=" + base_city,
+                success: function (result) {
+
+                    localStorage.setItem(base_city, JSON.stringify(result));
+
+                    for (var i = 0; i < result.length; i++) {
+                        html_data = html_data + '<tr>' +
+                            '<td><a style="text-decoration: none" href=banks/' + result[i].bank_id + '>' + result[i].bank_name + '</td>' +
+                            '<td>' + result[i].branch + '</td>' +
+                            '<td>' + result[i].city + '</td>' +
+                            '<td style="cursor: pointer" class="text-center btn add_to_favourite" id=' + result[i].ifsc + '><em class="fa fa-star-o" style="font-size: 1.4em"></em></td>' +
+                            '</tr>'
+                    }
+
+                    $("#table_data").html(html_data);
+                }
+            });
+        }
         $("#table_data").fadeIn(500);
         $("#t_body_loader").fadeOut(500);
 
 
     });
     $(document).on('click', '.add_to_favourite', function () {
+        $("#div_fav_banks").html('');
+        $("#div_fav_banks_loader").fadeIn(200);
+
         var b_id = $(this).attr("id");
         var bank_name = $(this).siblings().eq(0)[0].innerHTML;
         var branch = $(this).siblings().eq(1)[0].innerHTML;
@@ -205,12 +238,87 @@ $(document).ready(function () {
             '_token': $('input[name=_token]').val()
         }, function (data) {
             if (data == "fav") {
-                alert("added to favourite");
+                $.post('/get_fav_banks', {
+                    '_token': $('input[name=_token]').val()
+                }, function (data) {
+                    var html_data = "";
+                    if (data.length != 0) {
+                        html_data = "";
+                        html_data = html_data + '<table class="table">' +
+                            '<thead>' +
+                            '<tr>' +
+                            '<th>Bank Ifsc</th>' +
+                            '<th>Bank Name</th>' +
+                            '<th>Bank Branch</th>' +
+                            '<th>Bank City</th>' +
+                            '<th>Remove Favourite</th>' +
+                            '</tr>' +
+                            '</thead><tbody style="">';
+                        for (var i = 0; i < data.length; i++) {
+                            html_data = html_data + '<tr>' +
+                                '<td>' + data[i].bank_id + '</td>' +
+                                '<td>' + data[i].bank_name + '</td>' +
+                                '<td>' + data[i].branch + '</td>' +
+                                '<td>' + data[i].city + '</td>' +
+                                '<td style="cursor: pointer" class="text-center btn add_to_favourite" id=' + data[i].bank_id + '><em class="fa fa-star-o rmv_fav" style="font-size: 1.4em;outline: none"></em></td>' +
+                                '</tr>'
+                        }
+                        html_data = html_data + '</tbody>' +
+                            '</table>'
+                    }
+                    else {
+                        html_data = "<div class='text-center' style='margin-top: 200px'><h4>No banks added to favourite yet</h4></div>"
+                    }
+
+                    $("#div_fav_banks").html(html_data);
+                    $("#div_fav_banks_loader").fadeOut(200);
+                    $("#div_fav_banks").fadeIn(500);
+                    alert("added to favourite");
+                });
             }
             if (data == "unfav") {
-                alert("removed from favourite");
+                $.post('/get_fav_banks', {
+                    '_token': $('input[name=_token]').val()
+                }, function (data) {
+                    var html_data = "";
+                    if (data.length != 0) {
+                        html_data = "";
+                        html_data = html_data + '<table class="table">' +
+                            '<thead>' +
+                            '<tr>' +
+                            '<th>Bank Ifsc</th>' +
+                            '<th>Bank Name</th>' +
+                            '<th>Bank Branch</th>' +
+                            '<th>Bank City</th>' +
+                            '<th>Remove Favourite</th>' +
+                            '</tr>' +
+                            '</thead><tbody style="">';
+                        for (var i = 0; i < data.length; i++) {
+                            html_data = html_data + '<tr>' +
+                                '<td>' + data[i].bank_id + '</td>' +
+                                '<td>' + data[i].bank_name + '</td>' +
+                                '<td>' + data[i].branch + '</td>' +
+                                '<td>' + data[i].city + '</td>' +
+                                '<td style="cursor: pointer" class="text-center btn add_to_favourite" id=' + data[i].bank_id + '><em class="fa fa-star-o rmv_fav" style="font-size: 1.4em;outline: none"></em></td>' +
+                                '</tr>'
+                        }
+                        html_data = html_data + '</tbody>' +
+                            '</table>'
+                    }
+                    else {
+                        html_data = "<div class='text-center' style='margin-top: 200px'><h4>No banks added to favourite yet</h4></div>"
+                    }
+
+                    $("#div_fav_banks").html(html_data);
+                    $("#div_fav_banks_loader").fadeOut(200);
+                    $("#div_fav_banks").fadeIn(500);
+
+                });
+
             }
         });
+        $("#div_fav_banks_loader").fadeOut(200);
+        $("#div_fav_banks").fadeIn(500);
     });
 
     $("#btn_add_fav").click(function () {
@@ -231,6 +339,7 @@ $(document).ready(function () {
                     '<th>Bank Name</th>' +
                     '<th>Bank Branch</th>' +
                     '<th>Bank City</th>' +
+                    '<th>Remove Favourite</th>' +
                     '</tr>' +
                     '</thead><tbody style="">';
                 for (var i = 0; i < data.length; i++) {
@@ -239,6 +348,7 @@ $(document).ready(function () {
                         '<td>' + data[i].bank_name + '</td>' +
                         '<td>' + data[i].branch + '</td>' +
                         '<td>' + data[i].city + '</td>' +
+                        '<td style="cursor: pointer" class="text-center btn add_to_favourite" id=' + data[i].bank_id + '><em class="fa fa-star-o rmv_fav" style="font-size: 1.4em;outline: none"></em></td>' +
                         '</tr>'
                 }
                 html_data = html_data + '</tbody>' +
@@ -254,6 +364,7 @@ $(document).ready(function () {
 
         });
     });
+   
 
 
 });
