@@ -5,7 +5,7 @@
 
 
     <div class="col-sm-12 top-bar" style="top: 0px;padding: 2%;position: fixed;z-index: 9999">
-        <div class="text-center">
+        <div class="col-sm-12 text-center">
             <h2 style="color: white;"><em class="fa fa-university"></em> Banks, on your door step</h2>
         </div>
         <div class="row" id="div_search">
