@@ -154,7 +154,6 @@ $(document).ready(function () {
                     localStorage.setItem(local, JSON.stringify(result));
 
 
-
                     for (var i = 0; i < result.length; i++) {
 
                         html_data = html_data + '<tr>' +
@@ -179,6 +178,8 @@ $(document).ready(function () {
 
     $("#dd_city").change(function () {
         var base_city = $('#dd_city option:selected').text();
+
+        $('#bank_table').DataTable().destroy();
 
         $("#t_body_loader").fadeIn(150);
         $("#table_data").fadeOut(50);
@@ -227,10 +228,7 @@ $(document).ready(function () {
             });
         }
         $("#table_data").fadeIn(500);
-
         $("#t_body_loader").fadeOut(500);
-
-
     });
     $(document).on('click', '.add_to_favourite', function () {
         $("#div_fav_banks").html('');
@@ -375,6 +373,4 @@ $(document).ready(function () {
 
         });
     });
-
-
 });

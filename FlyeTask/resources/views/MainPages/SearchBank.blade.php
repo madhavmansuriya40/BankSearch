@@ -68,10 +68,10 @@
                                 style="border-radius: 50px;background: transparent;padding: 8px;width: 70%;outline: none;">
                             Favouriets <em class="fa fa-star" style="font-size: 1.4em;color:yellow"></em></button>
                     </div>
-                    <div class="col-sm-6 text-right">
-                        <em class="fa fa-search text-primary" style="font-size: 1.2em"></em>
-                        <input type="text" class="search_box" id="txt_search_table" placeholder="Search">
-                    </div>
+                    {{--<div class="col-sm-6 text-right">--}}
+                        {{--<em class="fa fa-search text-primary" style="font-size: 1.2em"></em>--}}
+                        {{--<input type="text" class="search_box" id="txt_search_table" placeholder="Search">--}}
+                    {{--</div>--}}
                 </div>
                 <script>
                     function printDiv() {
