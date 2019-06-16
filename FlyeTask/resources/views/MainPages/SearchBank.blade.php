@@ -55,8 +55,9 @@
         </div>
 
 
-        <div class="" >
-            <div class="table-responsive" style="margin-top: 3.5%;background-color: white;padding: 1%" id="div_show_bank_list">
+        <div class="">
+            <div class="table-responsive" style="margin-top: 3.5%;background-color: white;padding: 1%"
+                 id="div_show_bank_list">
                 <div class="col-sm-12 " style="padding: 1%">
                     <div class="col-sm-3 text-left">
                         <button onclick="printDiv();"
@@ -69,8 +70,8 @@
                             Favouriets <em class="fa fa-star" style="font-size: 1.4em;color:yellow"></em></button>
                     </div>
                     {{--<div class="col-sm-6 text-right">--}}
-                        {{--<em class="fa fa-search text-primary" style="font-size: 1.2em"></em>--}}
-                        {{--<input type="text" class="search_box" id="txt_search_table" placeholder="Search">--}}
+                    {{--<em class="fa fa-search text-primary" style="font-size: 1.2em"></em>--}}
+                    {{--<input type="text" class="search_box" id="txt_search_table" placeholder="Search">--}}
                     {{--</div>--}}
                 </div>
                 <script>
@@ -81,12 +82,16 @@
 
                         var $clonedtable = $('#printableArea').clone();
 
-                        // $clonedtable.children().eq(1).children().eq(0).children(0).remove();
-                        // / $clonedtable.children().eq(1).children().eq(2).children(0).remove();
+                        $clonedtable.children().eq(0).children().eq(1).remove();
+                        $clonedtable.children().eq(0).children().eq(0).remove();
+                        $clonedtable.children().eq(0).children().eq(2).remove();
+                        $clonedtable.children().eq(0).children().eq(1).remove();
+                        $clonedtable.children().eq(0).children().eq(2).remove();
+                        // $clonedtable.children().eq(0).children().eq(3).remove();
                         //checkiing which children is removed
                         //alert($clonedtable.children().eq(3).children().eq(1).remove());
 
-                        newWin.document.write('<html><head><style>@page { size: portrait; }table, tr, th, td{border: solid 0.2px gray;padding: 5px;}</style></head><body onload="window.print()">' + $clonedtable.html() + '</body></html>');
+                        newWin.document.write('<html><head><style>@page { size: portrait; }table, tr, th, td{border: solid 0.2px gray;padding: 5px;}</style></head><body onload="window.print()"><center><h1 style="color:lightskyblue">Bank Details</h1></center>' + $clonedtable.html() + '</body></html>');
                         newWin.document.close();
                         setTimeout(function () {
                             newWin.close();

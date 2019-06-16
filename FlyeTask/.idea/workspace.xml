@@ -23,20 +23,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchBank.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SearchBank.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/MainPages/SearchBank.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
+            <state relative-caret-position="120">
+              <caret line="93" column="230" selection-start-line="93" selection-start-column="230" selection-end-line="93" selection-end-column="230" />
               <folding>
                 <element signature="e#2479#2541#0#HTML" expanded="true" />
                 <element signature="e#2605#2624#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frame.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="frame.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/Frame/frame.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="496">
@@ -145,8 +148,8 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/public/js/pagination.js" />
         <option value="$PROJECT_DIR$/public/js/BankDetails.js" />
-        <option value="$PROJECT_DIR$/resources/views/MainPages/SearchBank.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/Frame/frame.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/MainPages/SearchBank.blade.php" />
       </list>
     </option>
   </component>
@@ -414,12 +417,12 @@
       <workItem from="1560481279197" duration="23605000" />
       <workItem from="1560528924462" duration="2879000" />
       <workItem from="1560611247567" duration="11346000" />
-      <workItem from="1560654047156" duration="10888000" />
+      <workItem from="1560654047156" duration="12103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73890000" />
+    <option name="totallyTimeSpent" value="75105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
@@ -755,21 +758,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/MainPages/SearchBank.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
-          <folding>
-            <element signature="e#2479#2541#0#HTML" expanded="true" />
-            <element signature="e#2605#2624#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/Frame/frame.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
           <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/MainPages/SearchBank.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="93" column="230" selection-start-line="93" selection-start-column="230" selection-end-line="93" selection-end-column="230" />
+          <folding>
+            <element signature="e#2479#2541#0#HTML" expanded="true" />
+            <element signature="e#2605#2624#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
