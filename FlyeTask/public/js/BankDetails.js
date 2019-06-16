@@ -126,9 +126,11 @@ $(document).ready(function () {
         var html_data = "";
 
         let last_search = localStorage.getItem(local);
-        console.log()
+
         if (last_search) {
             result = JSON.parse(last_search);
+            console.log(result);
+
             for (var i = 0; i < result.length; i++) {
 
                 html_data = html_data + '<tr>' +
@@ -138,7 +140,9 @@ $(document).ready(function () {
                     '<td style="cursor: pointer" class="text-center btn add_to_favourite" id=' + result[i].ifsc + '><em class="fa fa-star-o" style="font-size: 1.4em"></em></td>' +
                     '</tr>';
             }
+
             $("#table_data").html(html_data);
+            $('#bank_table').DataTable();
         }
         else {
 
@@ -148,6 +152,7 @@ $(document).ready(function () {
                 success: function (result) {
 
                     localStorage.setItem(local, JSON.stringify(result));
+
 
 
                     for (var i = 0; i < result.length; i++) {
@@ -160,11 +165,13 @@ $(document).ready(function () {
                             '</tr>';
                     }
                     $("#table_data").html(html_data);
+                    $('#bank_table').DataTable();
                 }
             });
         }
 
         $("#table_data").fadeIn(500);
+
         $("#t_body_loader").fadeOut(500);
         $("#div_show_bank_list").fadeIn(500);
         $("#div_search_dd").fadeIn(500);
@@ -183,6 +190,8 @@ $(document).ready(function () {
 
         if (last_bank_search) {
             result = JSON.parse(last_bank_search);
+
+
             for (var i = 0; i < result.length; i++) {
                 html_data = html_data + '<tr>' +
                     '<td><a style="text-decoration: none" href=banks/' + result[i].bank_id + '>' + result[i].bank_name + '</td>' +
@@ -192,9 +201,9 @@ $(document).ready(function () {
                     '</tr>'
             }
             $("#table_data").html(html_data);
+            $('#bank_table').DataTable();
         }
         else {
-
 
 
             $.ajax({
@@ -213,10 +222,12 @@ $(document).ready(function () {
                     }
 
                     $("#table_data").html(html_data);
+                    $('#bank_table').DataTable();
                 }
             });
         }
         $("#table_data").fadeIn(500);
+
         $("#t_body_loader").fadeOut(500);
 
 
@@ -364,7 +375,6 @@ $(document).ready(function () {
 
         });
     });
-
 
 
 });
