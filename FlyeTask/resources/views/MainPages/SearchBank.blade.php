@@ -55,9 +55,9 @@
         </div>
 
 
-        <div class="">
-            <div class="table-responsive" style="margin-top: 3.5%;" id="div_show_bank_list">
-                <div class="col-sm-12 ">
+        <div class="" >
+            <div class="table-responsive" style="margin-top: 3.5%;background-color: white;padding: 1%" id="div_show_bank_list">
+                <div class="col-sm-12 " style="padding: 1%">
                     <div class="col-sm-3 text-left">
                         <button onclick="printDiv();"
                                 style="border-radius: 50px;background: transparent;padding: 10px;width: 50%;outline: none;">

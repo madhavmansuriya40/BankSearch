@@ -23,20 +23,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchBank.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SearchBank.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/MainPages/SearchBank.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="73" column="30" lean-forward="true" selection-start-line="70" selection-start-column="24" selection-end-line="73" selection-end-column="30" />
+            <state relative-caret-position="264">
+              <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
+              <folding>
+                <element signature="e#2479#2541#0#HTML" expanded="true" />
+                <element signature="e#2605#2624#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frame.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="frame.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/Frame/frame.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="41" column="45" lean-forward="true" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+            <state relative-caret-position="496">
+              <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -56,7 +60,7 @@
       <file leaf-file-name="BankDetails.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/BankDetails.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
+            <state relative-caret-position="4096">
               <caret line="225" column="49" selection-start-line="225" selection-start-column="49" selection-end-line="225" selection-end-column="49" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -140,9 +144,9 @@
         <option value="$PROJECT_DIR$/public/js/data_table.js" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/public/js/pagination.js" />
-        <option value="$PROJECT_DIR$/resources/views/Frame/frame.blade.php" />
         <option value="$PROJECT_DIR$/public/js/BankDetails.js" />
         <option value="$PROJECT_DIR$/resources/views/MainPages/SearchBank.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/Frame/frame.blade.php" />
       </list>
     </option>
   </component>
@@ -372,16 +376,16 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Studies\x-tras\Internshala Tasks\Git hub repo\BankSearch\FlyeTask\public\css" />
-      <recent name="E:\Studies\x-tras\Internshala Tasks\Git hub repo\BankSearch\FlyeTask\public\js" />
-      <recent name="E:\Studies\x-tras\Internshala Tasks\Git hub repo\BankSearch\FlyeTask\public\image" />
-      <recent name="E:\Studies\x-tras\Internshala Tasks\flye task\FlyeTask\public\js" />
-      <recent name="E:\Studies\x-tras\Internshala Tasks\flye task\FlyeTask\public\image" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Studies\x-tras\Internshala Tasks\flye task\FlyeTask\resources\views\Frame" />
       <recent name="E:\Studies\x-tras\Internshala Tasks\flye task\FlyeTask\public\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Studies\x-tras\Internshala Tasks\Git hub repo\BankSearch\FlyeTask\public\image" />
+      <recent name="E:\Studies\x-tras\Internshala Tasks\Git hub repo\BankSearch\FlyeTask\public\css" />
+      <recent name="E:\Studies\x-tras\Internshala Tasks\Git hub repo\BankSearch\FlyeTask\public\js" />
+      <recent name="E:\Studies\x-tras\Internshala Tasks\flye task\FlyeTask\public\js" />
+      <recent name="E:\Studies\x-tras\Internshala Tasks\flye task\FlyeTask\public\image" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -410,12 +414,12 @@
       <workItem from="1560481279197" duration="23605000" />
       <workItem from="1560528924462" duration="2879000" />
       <workItem from="1560611247567" duration="11346000" />
-      <workItem from="1560654047156" duration="7875000" />
+      <workItem from="1560654047156" duration="10888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70877000" />
+    <option name="totallyTimeSpent" value="73890000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
@@ -678,6 +682,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="e#113#136#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -711,16 +718,9 @@
     <entry file="file://$PROJECT_DIR$/public/js/pagination.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/Frame/frame.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="41" column="45" lean-forward="true" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/BankDetails.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
+        <state relative-caret-position="4096">
           <caret line="225" column="49" selection-start-line="225" selection-start-column="49" selection-end-line="225" selection-end-column="49" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -757,8 +757,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/MainPages/SearchBank.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="73" column="30" lean-forward="true" selection-start-line="70" selection-start-column="24" selection-end-line="73" selection-end-column="30" />
+        <state relative-caret-position="264">
+          <caret line="59" column="58" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
+          <folding>
+            <element signature="e#2479#2541#0#HTML" expanded="true" />
+            <element signature="e#2605#2624#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/Frame/frame.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
         </state>
       </provider>
     </entry>

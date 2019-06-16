@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-
     <title>@yield('title')</title>
 
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
@@ -21,13 +20,25 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-
+    <style>
+        body
+        {
+            display: block;
+            height: 100%;
+            background: url("/image/bank1.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: initial;
+        }
+    </style>
 
 
 </head>
 <body>
+
+
 @section('content')
-    @show()
+@show()
 </body>
 {{--js file--}}
 
@@ -41,9 +52,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
-<script>
-
-</script>
 </html>
 
 
