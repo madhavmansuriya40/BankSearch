@@ -15,7 +15,7 @@ $(document).ready(function () {
 
 
     var platform = new H.service.Platform({
-        "useHTTPS": true
+        "useHTTPS": true,
         "app_id": "BjmHZnahwYeQWLjbemD7",
         "app_code": "hfv2htIlBXllnGcyOo7CBw"
     });
